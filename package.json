@@ -1,16 +1,41 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
+  "name": "js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js",
+    "test": "node test.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
     "express": "^4.17.3",
-    "mongodb": "^4.5.0"
-  }
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.7",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "got": "^11.8.3",
+    "tape": "^4.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heroku/node-js-getting-started.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heroku/node-js-getting-started/issues"
+  },
+  "homepage": "https://github.com/heroku/node-js-getting-started#readme",
+  "author": ""
 }

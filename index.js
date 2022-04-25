@@ -4,6 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const {login, register}= require("./controller/admin.controller");
 const app = express()
+const PORT = process.env.PORT || 5000;
 
 app.use(express.json())
 
@@ -23,7 +24,7 @@ app.use('/signup', register);
 
 
 
-app.listen(5000, async () => {
+app.listen(PORT, async () => {
   try {
     await connect();
   } catch (err) {
