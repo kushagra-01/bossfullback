@@ -1,6 +1,6 @@
 
 const express = require("express")
-const product=require("../controller/product.cntrl")
+const product=require("../model/product")
 
 
 const router = express.Router()
@@ -43,5 +43,4 @@ router.get("/city", async (req,res) => {
     } 
 });
 
-
-module.exports=router
+module.exports =router;
