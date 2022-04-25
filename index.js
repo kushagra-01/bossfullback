@@ -6,7 +6,7 @@ const {login, register}= require("./controller/admin.controller");
 const path = require('path')
 const app = express()
 const PORT = process.env.PORT || 5000;
-
+const product=require('./controller/product.cntrl')
 app.use(express.json())
 
 const connect = ()=>{
@@ -18,6 +18,7 @@ const connect = ()=>{
 
 app.use('/login',login);
 app.use('/signup', register);
+app.use('/', product);
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'views'))
