@@ -21,7 +21,7 @@ router.get("/:id", async (req, res) => {
       const showArt = await product.findById(req.params.id);
       return res.send(showArt);
     } catch (err) {
-      return res.send(err.message);
+      return res.send(err.message,"nothhhhh");
     }
   });
   
