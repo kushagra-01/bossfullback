@@ -40,7 +40,7 @@ router.post("/create", async (req, res) => {
 })
 
 
-router.get("/:city", async(req, res) => {
+router.get("/city", async(req, res) => {
     try {
 
         const city = req.query.city
