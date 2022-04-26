@@ -40,11 +40,11 @@ router.post("/create", async (req, res) => {
 })
 
 
-router.get("/city", async (req, res) => {
+router.get("/city", async(req, res) => {
     try {
 
-        const city = req.query.city;
-        const showArt = await product.find({ city: city }).lean().exec();
+        const city = req.query.city
+        const showArt = await product.find({city:city}).lean().exec();
 
         return res.send(showArt);
     } catch (err) {
