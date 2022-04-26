@@ -7,7 +7,7 @@ const productSchema = mongoose.Schema({
     address:{type:String, required:true},
     capacity:{type:Number, required:true},
     costperday:{type:Number, required:true},
-    verified:{type:String, required:true},
+    verified:{type:Boolean, required:true},
     rating:{type:Number, required:true}
 },{
    versionKey:false,
